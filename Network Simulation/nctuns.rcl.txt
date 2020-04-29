@@ -1,0 +1,26 @@
+Experiment No. 8
+Problem Statement: 
+Simulate simple ESS and with transmitting nodes in wire-less LAN by simulation and determine the performance with respect to transmission of packets using NCTUNS
+
+#File Name: nsexp8.tcl                 
+#Description: simple ESS and with transmitting nodes in wire-less LAN ######################################################################
+
+
+ 
+
+1.	 Click on “access point”. Goto wireless interface and tick on “show transmission range and then click OK.
+2.	Double click on Router -> Node Editor and then
+Left stack -> throughput of Incoming packets
+Right stack -> throughput of Outgoing packets
+3.	Select mobile hosts and access points then click on.
+Tools -> WLAN mobile nodes-> WLAN Generate infrastructure.
+Subnet ID: Port number of router (2)
+Gateway ID: IP address of router
+4.	Mobile Host 1
+ttcp –t –u –s –p 3000 1.0.1.1
+5.	Mobile Host 1
+ttcp –t –u –s –p 3001 1.0.1.1
+6.	Host(Receiver)
+ttcp –r –u –s –p 3000
+ttcp –r –u –s –p 3001
+7.	Run and then play to plot the graph.
